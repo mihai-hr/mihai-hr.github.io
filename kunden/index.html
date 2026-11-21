@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="noindex">
+<title>Mihai Dumitru · Everlast Consulting</title>
+<link rel="apple-touch-icon" href="../mihai.jpg">
+<style>
+@font-face{font-family:'Space Grotesk';font-weight:600;src:url(../schriften/SpaceGrotesk-600.ttf)}
+@font-face{font-family:'Space Grotesk';font-weight:700;src:url(../schriften/SpaceGrotesk-700.ttf)}
+@font-face{font-family:Inter;font-weight:400;src:url(../schriften/Inter-400.ttf)}
+@font-face{font-family:Inter;font-weight:600;src:url(../schriften/Inter-600.ttf)}
+@font-face{font-family:'JetBrains Mono';font-weight:500;src:url(../schriften/JetBrainsMono-500.ttf)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#0A0A0A}
+body{min-height:100vh;min-height:100dvh;color:#F2F0EA;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+ background:
+  radial-gradient(60vmax 40vmax at 100% 0%,rgba(245,211,94,.16),transparent 60%),
+  radial-gradient(50vmax 35vmax at 0% 100%,rgba(245,211,94,.10),transparent 60%),
+  linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px) 0 0/36px 36px,
+  linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px) 0 0/36px 36px,#0A0A0A}
+.wrap{max-width:440px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top)) 22px calc(28px + env(safe-area-inset-bottom));position:relative}
+.ecke{position:absolute;width:22px;height:22px;border-color:#F5D35E;border-style:solid;opacity:.9}
+.ecke.o{top:calc(14px + env(safe-area-inset-top));left:12px;border-width:2px 0 0 2px}
+.ecke.u{bottom:calc(14px + env(safe-area-inset-bottom));right:12px;border-width:0 2px 2px 0}
+.kopf{display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:#bdb9ae}
+.pille{border:1px solid rgba(245,211,94,.6);color:#F5D35E;border-radius:99px;padding:5px 11px 5px 9px;display:inline-flex;align-items:center;gap:7px}
+.pille i{width:6px;height:6px;border-radius:50%;background:#F5D35E;box-shadow:0 0 8px #F5D35E}
+.profil{text-align:center;margin-top:34px}
+.bild{width:132px;height:132px;border-radius:50%;margin:0 auto;padding:3px;background:linear-gradient(140deg,#F5D35E,#8a6d1c 60%,#F5D35E)}
+.bild img,.bild span{width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;object-fit:cover;background:#151515;
+ font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;color:#F5D35E;border:3px solid #0A0A0A}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;letter-spacing:-.025em;margin-top:18px;line-height:1.05}
+.rolle{font-size:14px;color:#bdb9ae;margin-top:6px}
+.linie{width:46px;height:2px;background:#F5D35E;margin:18px auto 0;box-shadow:0 0 10px rgba(245,211,94,.6)}
+.intro{font-size:15px;line-height:1.5;color:#d9d6cc;margin:18px auto 0;max-width:340px}
+.speichern{margin-top:24px;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px;border-radius:14px;
+ background:rgba(245,211,94,.08);border:1px solid rgba(245,211,94,.55);color:#F5D35E;font-weight:600;font-size:16px;text-decoration:none}
+.speichern svg{width:20px;height:20px}
+.knoepfe{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+.k{display:flex;align-items:center;gap:14px;padding:15px 16px;border-radius:14px;text-decoration:none;color:#F2F0EA;
+ background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);-webkit-tap-highlight-color:transparent;transition:transform .12s}
+.k:active{transform:scale(.98)}
+.k .ic{flex:none;width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);color:#F2F0EA}
+.k .ic svg{width:22px;height:22px}
+.k b{display:block;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em}
+.k small{display:block;font-size:13px;color:#a9a59b;margin-top:2px}
+.k .txt{flex:1;min-width:0}
+.k.haupt{background:#F5D35E;color:#0A0A0A;border-color:#F5D35E;box-shadow:0 8px 30px rgba(245,211,94,.25)}
+.k.haupt small{color:#3d3412}
+.k.haupt .ic{background:#0A0A0A;color:#F5D35E}
+.k.wa .ic{background:rgba(37,211,102,.12)}
+.fuss{margin-top:34px;text-align:center;font-size:12px;color:#7d7a72;line-height:1.7}
+.fuss a{color:#9d9a91;text-decoration:none}
+.marke{font-family:'JetBrains Mono',monospace;letter-spacing:.2em;font-size:10px;color:#6d6a63;margin-top:6px}
+</style>
+</head><body>
+<div class="wrap">
+ <span class="ecke o"></span><span class="ecke u"></span>
+ <div class="kopf"><span>EVERLAST</span><span class="pille"><i></i>KI-BERATUNG</span></div>
+ <div class="profil">
+  <div class="bild"><img src="../mihai.jpg" alt="Mihai Dumitru"></div>
+  <h1>Mihai Dumitru</h1>
+  <div class="rolle">HR-Manager · Everlast Consulting GmbH</div>
+  <div class="linie"></div>
+  <p class="intro">KI-Beratung und Umsetzung für den Mittelstand. Sprechen Sie mich gern direkt an.</p>
+ </div>
+ <a class="speichern" href="../mihai-dumitru.vcf" download="Mihai Dumitru.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="8" r="4"/><path d="M2.5 20a7.5 7.5 0 0 1 15 0M19 8v6M16 11h6"/></svg>Kontakt speichern</a>
+ <div class="knoepfe">
+  <a class="k haupt" href="https://www.kiberatung.de?utm_source=mihai&utm_medium=visitenkarte&utm_campaign=kunden" target="_blank" rel="noopener">
+   <span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt"><b>Zur Website</b><small>kiberatung.de</small></span>
+  </a>
+  <a class="k wa" href="https://wa.me/491718604080?text=Hallo%20Herr%20Dumitru%2C%20wir%20haben%20Ihre%20Visitenkarte%20gescannt%20und%20interessieren%20uns%20f%C3%BCr%20KI%20in%20unserem%20Unternehmen." target="_blank" rel="noopener">
+   <span class="ic"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span class="txt"><b>WhatsApp schreiben</b><small>0171 8604080</small></span>
+  </a>
+  <a class="k normal" href="tel:+491718604080">
+   <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span><span class="txt"><b>Anrufen</b><small>0171 8604080</small></span>
+  </a>
+  <a class="k normal" href="mailto:dumitru@kiberatung.de">
+   <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span class="txt"><b>E-Mail</b><small>dumitru@kiberatung.de</small></span>
+  </a>
+  <a class="k normal" href="https://www.youtube.com/@everlastai" target="_blank" rel="noopener">
+   <span class="ic"><svg viewBox="0 0 24 24"><path fill="#FF0000" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8z"/><path fill="#fff" d="M9.8 15.1 15.6 12 9.8 8.9z"/></svg></span><span class="txt"><b>YouTube</b><small>Everlast AI</small></span>
+  </a>
+ </div>
+ <div class="fuss">
+  <a href="https://www.kiberatung.de/impressum" target="_blank" rel="noopener">Impressum</a> ·
+  <a href="https://www.kiberatung.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+  <div class="marke">EVERLAST CONSULTING GMBH</div>
+ </div>
+</div>
+</body></html>
