@@ -13,15 +13,16 @@
 @font-face{font-family:Inter;font-weight:600;src:url(../schriften/Inter-600.ttf)}
 @font-face{font-family:'JetBrains Mono';font-weight:500;src:url(../schriften/JetBrainsMono-500.ttf)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{min-height:100%;background-color:#0A0A0A;
- background-image:
-  radial-gradient(60vmax 40vmax at 100% 0%,rgba(245,211,94,.16),transparent 60%),
-  radial-gradient(50vmax 35vmax at 0% 100%,rgba(245,211,94,.10),transparent 60%),
-  linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
-  linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
- background-size:100% 100%,100% 100%,36px 36px,36px 36px;
- background-repeat:no-repeat,no-repeat,repeat,repeat}
-body{min-height:100vh;min-height:100dvh;color:#F2F0EA;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:transparent}
+html{background:#0A0A0A;overscroll-behavior:none}
+body{min-height:100vh;min-height:100dvh;color:#F2F0EA;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+ background:transparent;overscroll-behavior:none}
+/* feste Hintergrund-Ebenen: füllen immer den ganzen Bildschirm, auch hinter der Safari-Leiste und beim Nachfedern */
+body::before{content:"";position:fixed;left:0;right:0;top:-40vh;bottom:-40vh;z-index:-2;pointer-events:none;background-color:#0A0A0A;
+ background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+ background-size:36px 36px}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:radial-gradient(60vmax 40vmax at 100% 0%,rgba(245,211,94,.16),transparent 60%),
+  radial-gradient(50vmax 35vmax at 0% 100%,rgba(245,211,94,.10),transparent 60%)}
 .wrap{max-width:440px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top)) 22px calc(28px + env(safe-area-inset-bottom));position:relative}
 .ecke{position:absolute;width:22px;height:22px;border-color:#F5D35E;border-style:solid;opacity:.9}
 .ecke.o{top:calc(14px + env(safe-area-inset-top));left:12px;border-width:2px 0 0 2px}
